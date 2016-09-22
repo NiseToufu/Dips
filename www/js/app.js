@@ -30,8 +30,8 @@ angular.module('yulpApp', ['ionic'])
  .state('home.feed', {
  url: '/feed', // url will be /home/feed
  views: {
- 'tab-feed': {
- templateUrl: 'views/home/feed.html'
+ 'tab-home': {
+ templateUrl: 'views/home/homePage.html'
  }
  }
  })
@@ -39,8 +39,8 @@ angular.module('yulpApp', ['ionic'])
  .state('home.search', {
  url: '/search', // url will be /home/search
  views: {
- 'tab-search': {
- templateUrl: 'views/home/search.html'
+ 'tab-navigate': {
+ templateUrl: 'views/home/navigate.html'
  }
  }
  })
