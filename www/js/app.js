@@ -27,8 +27,8 @@ angular.module('yulpApp', ['ionic'])
  abstract: true
  })
 
- .state('home.feed', {
- url: '/feed', // url will be /home/feed
+ .state('home.homePage', {
+ url: '/homePage',
  views: {
  'tab-home': {
  templateUrl: 'views/home/homePage.html'
@@ -36,8 +36,8 @@ angular.module('yulpApp', ['ionic'])
  }
  })
 
- .state('home.search', {
- url: '/search', // url will be /home/search
+ .state('home.navigate', {
+ url: '/navigate',
  views: {
  'tab-navigate': {
  templateUrl: 'views/home/navigate.html'
@@ -46,8 +46,8 @@ angular.module('yulpApp', ['ionic'])
  })
 
  .state('home.settings', {
- url: '/settings', // url will be /home/settings
- views: { // named views
+ url: '/settings',
+ views: {
  'tab-settings': {
  templateUrl: 'views/home/settings.html'
  }
@@ -56,5 +56,5 @@ angular.module('yulpApp', ['ionic'])
 
 
  // if none of the above states are matched, use this as the fallback
- $urlRouterProvider.otherwise('/home/feed');
+ $urlRouterProvider.otherwise('/home/homePage');
 });
