@@ -30,7 +30,7 @@ angular.module('yulpApp', ['ionic'])
  .state('home.homePage', {
  url: '/homePage',
  views: {
- 'tab-home': {
+ 'tab-homePage': {
  templateUrl: 'views/home/homePage.html'
  }
  }
@@ -41,6 +41,15 @@ angular.module('yulpApp', ['ionic'])
  views: {
  'tab-navigate': {
  templateUrl: 'views/home/navigate.html'
+ }
+ }
+ })
+
+  .state('home.navigate2', {
+ url: '/navigate2',
+ views: {
+ 'tab-navigate': {
+ templateUrl: 'views/home/navigate2.html'
  }
  }
  })
