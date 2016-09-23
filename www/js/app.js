@@ -61,7 +61,18 @@ angular.module('yulpApp', ['ionic'])
  templateUrl: 'views/home/settings.html'
  }
  }
- });
+ })
+
+ .state('home.report', {
+ url: '/report',
+ views: {
+ 'tab-report': {
+ templateUrl: 'views/home/report.html'
+ }
+ }
+ })
+
+ ;
 
 
  // if none of the above states are matched, use this as the fallback
