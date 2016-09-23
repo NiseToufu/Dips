@@ -1,14 +1,38 @@
-<ion-view view-title="Dips">
- <ion-content>
- <h2 class="padding-horizontal">Navigate</h2>
-
-  <ion-scroll zooming="true" direction="xy" style="width: 400px; height: 300px; margin: 0 auto;">
-    <div style="width: 5000px; height: 5000px; background: url('https://upload.wikimedia.org/wikipedia/commons/a/ad/Europe_geological_map-en.jpg') repeat"></div>
+<ion-nav-view>
+<ion-view>
+ <ion-content hide-back-button='false'>
+ <div class="button-bar">
+  <a href="#/home/navigate" class="button icon-middle ion-ios-arrow-back button-clear button-dark" style="height:100%;width:100%"> 
+  <a class ="button button-clear button-dark" style="font-family:Helvetica; font-size: 25px" style="height:100%;width:100%">DIPS</a>
+  <a class="button icon-middle ion-ios-gear-outline button-clear button-dark" style="height:100%;width:100%"></a>
+</div>
+  <ion-scroll zooming="true" direction="xy" style="margin:auto;width:100%;height:280px">
+    	<img src="/img/NewMap.png">
    </ion-scroll>
 
-   <div class="list card">
-    <h4 class="padding-horizontal">Result</h4>
-   </div>
+   <div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      <h2 style="font-size:19px">Happenings</h2>
+    </div>
+    <select style="font-size:16px">
+      <option>10km</option>
+      <option selected>20km</option>
+      <option>30km</option>
+    </select>
+  </label>
+
+  <div class="list card">
+
+  <div class="item item-avatar">
+    <img src="../img/3.png">
+    <h2>03:00pm | 21/09/2016<br />Jalan Parlimen<br />Heavy flooding</h2>
+  </div>
+</div>
+
+</div>
 
  </ion-content>
 </ion-view>
+</ion-nav-view>
